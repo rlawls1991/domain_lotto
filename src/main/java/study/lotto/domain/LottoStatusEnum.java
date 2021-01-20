@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum LottoStatusEnum {
+
     PRICE_1ST(1, 2_000_000_000, "6개 일치"),
     PRICE_2ST(2, 30_000_000, "5개 일치, 보너스 볼 일치"),
     PRICE_3ST(3, 1_500_000, "5개 일치"),
