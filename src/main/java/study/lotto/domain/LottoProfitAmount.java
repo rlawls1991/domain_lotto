@@ -11,11 +11,9 @@ public class LottoProfitAmount {
 
         for (int i = MATCH_LOTTE_MIN_COUNT; i <= MATCH_LOTTE_MAX_COUNT; i++) {
             lottoEnum = LottoStatusEnum.findByCount(i);
-            count = count + (lottoEnum.getPrice() * lottoEnum.getWinningCount());
+            count = count + lottoEnum.getPrice();
         }
 
         return count;
     }
-
-
 }

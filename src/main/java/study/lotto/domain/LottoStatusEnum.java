@@ -6,18 +6,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum LottoStatusEnum {
-    PRICE_1ST(1, 2_000_000_000, "6개 일치", 0),
-    PRICE_2ST(2, 30_000_000, "5개 일치, 보너스 볼 일치", 0),
-    PRICE_3ST(3, 1_500_000, "5개 일치", 0),
-    PRICE_4ST(4, 50_000, "4개 일치", 0),
-    PRICE_5ST(5, 5_000, "3개 일치", 0);
+    PRICE_1ST(1, 2_000_000_000, "6개 일치"),
+    PRICE_2ST(2, 30_000_000, "5개 일치, 보너스 볼 일치"),
+    PRICE_3ST(3, 1_500_000, "5개 일치"),
+    PRICE_4ST(4, 50_000, "4개 일치"),
+    PRICE_5ST(5, 5_000, "3개 일치");
 
     private int lottoRank = 0;
     private int winningCount = 0;
     private int price = 0;
     private String message = "";
 
-    LottoStatusEnum(int lottoRank, int price, String message, int winningCount) {
+    LottoStatusEnum(int lottoRank, int price, String message) {
         this.lottoRank = lottoRank;
         this.price = price;
         this.message = message;
@@ -59,6 +59,4 @@ public enum LottoStatusEnum {
     public int getWinningCount() {
         return winningCount;
     }
-
-
 }
